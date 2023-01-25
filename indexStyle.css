@@ -1,0 +1,35 @@
+/*nav bar content*/
+nav {
+	display: inline-block;
+	width: 100%;
+}
+
+
+
+.navLeft {
+	float: left;
+	width: 25%;
+	background-color: aqua;
+	min-height: 35px;
+}
+
+.navCenter {
+	width: 10%;
+	background-color: yellowgreen;
+	min-height: 35px;
+}
+
+.navRight {
+	float: right;
+	width: 25%;
+	background-color: aquamarine;
+	min-height: 35px;
+}
+
+/*main page*/
+
+.mainBody {
+	width: 100%;
+	min-height: 100px;
+	background-color: bisque;
+}
