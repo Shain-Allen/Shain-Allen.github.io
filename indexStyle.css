@@ -1,29 +1,32 @@
 /*nav bar content*/
 nav {
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 	width: 100%;
 }
 
-
-
 .navLeft {
-	float: left;
 	width: 25%;
+	min-height: 25px;
 	background-color: aqua;
-	min-height: 35px;
 }
 
 .navCenter {
-	width: 10%;
-	background-color: yellowgreen;
-	min-height: 35px;
+	width: auto;
+	min-height: 25px;
+	background-color: green;
 }
 
 .navRight {
-	float: right;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
 	width: 25%;
-	background-color: aquamarine;
-	min-height: 35px;
+	min-height: 25px;
+	background-color: rgb(167, 167, 215);
 }
 
 /*main page*/
