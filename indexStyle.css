@@ -3,36 +3,46 @@ nav {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-between;
+	justify-content: center;
 	width: 100%;
+	background-color: rgba(140, 140, 140, 0.477);
 }
 
-.navLeft {
-	width: 25%;
-	min-height: 25px;
-	background-color: aqua;
+nav h1 {
+	font-size: medium;
 }
 
-.navCenter {
+nav .NamePlate {
 	width: auto;
+	padding-left: 1ch;
+	padding-right: 1ch;
 	min-height: 25px;
-	background-color: green;
+	/*background-color: green;*/
 }
 
-.navRight {
+nav .Pages {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-around;
-	width: 25%;
+	width: 20%;
 	min-height: 25px;
-	background-color: rgb(167, 167, 215);
+	/*background-color: rgb(167, 167, 215);*/
+}
+
+nav .gap {
+	width: 4%;
+	/*background-color: azure;*/
 }
 
 /*main page*/
 
+body {
+	margin: 0px;
+}
+
 .mainBody {
 	width: 100%;
-	min-height: 100px;
-	background-color: bisque;
+	min-height: 600px;
+	background-color: rgba(255, 228, 196, 0.478);
 }
