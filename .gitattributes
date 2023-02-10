@@ -1,1 +1,1 @@
-*.png lockable
+*.png filter=lfs diff=lfs merge=lfs -text lockable
