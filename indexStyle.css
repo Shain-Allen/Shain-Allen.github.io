@@ -5,7 +5,7 @@ nav {
 	flex-wrap: nowrap;
 	justify-content: center;
 	width: 100%;
-	background-color: rgba(140, 140, 140, 0.477);
+	background-color: rgb(56, 60, 62);
 }
 
 nav h1 {
@@ -27,7 +27,10 @@ nav .Pages {
 	justify-content: space-around;
 	width: 20%;
 	min-height: 25px;
-	/*background-color: rgb(167, 167, 215);*/
+}
+
+nav h1 {
+	color: rgba(255, 255, 255, 0.751);
 }
 
 nav .gap {
@@ -56,7 +59,7 @@ section {
 	justify-content: center;
 	flex-direction: column;
 	min-height: 100px;
-	background-color: azure;
+	background-color: rgb(0, 60, 60);
 	padding-bottom: 1%;
 }
 
@@ -68,32 +71,46 @@ img {
 
 section h2 {
 	text-align: center;
+	color: azure;
 }
 
 section p {
 	width: 50%;
 	padding-left: 25%;
+	color: white;
+}
+
+section p a {
+	color: rgb(255, 0, 0);
 }
 
 footer {
 	align-self: center;
-	background-color: rgba(87, 49, 49, 0.26);
+	background-color: rgb(36, 29, 30);
 	padding: 0.1% 0% 2% 0%;
 }
 
 footer h1 {
 	text-align: center;
+	color: white;
 }
 
 address {
 	text-align: center;
 }
 
+address a {
+	color: white;
+}
+
 .FooterIcons {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	padding: 0% 45% 1% 45%;
 }
 
 .FooterIcons img {
 	width: 50px;
+	padding: 0% 0% 0% 0%;
 }
