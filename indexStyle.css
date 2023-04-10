@@ -19,6 +19,7 @@ section {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	width: 675px;
 	max-width: 75%;
 	min-height: 100px;
 	background-color: rgb(0, 60, 60);
