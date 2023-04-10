@@ -1,1 +1,32 @@
-@import url("NavStyle.css");
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(56, 60, 62);
+}
+nav .NamePlate {
+  width: auto;
+  padding: 0 1ch 0 1ch;
+  min-height: 25px;
+}
+nav .Pages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 20%;
+  min-height: 25px;
+}
+nav h1 {
+  font-size: medium;
+  color: rgba(255, 255, 255, 0.751);
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+nav .gap {
+  width: 4%;
+}/*# sourceMappingURL=WOCStyle.css.map */

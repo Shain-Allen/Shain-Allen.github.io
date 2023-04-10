@@ -1,44 +1,32 @@
-/*nav bar content*/
 nav {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	width: 100%;
-	background-color: rgb(56, 60, 62);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(56, 60, 62);
 }
-
-nav h1 {
-	font-size: medium;
-}
-
 nav .NamePlate {
-	width: auto;
-	padding-left: 1ch;
-	padding-right: 1ch;
-	min-height: 25px;
-	/*background-color: green;*/
+  width: auto;
+  padding: 0 1ch 0 1ch;
+  min-height: 25px;
 }
-
 nav .Pages {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	width: 20%;
-	min-height: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 20%;
+  min-height: 25px;
 }
-
 nav h1 {
-	color: rgba(255, 255, 255, 0.751);
+  font-size: medium;
+  color: rgba(255, 255, 255, 0.751);
 }
-
 nav a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-
 nav .gap {
-	width: 4%;
-	/*background-color: azure;*/
-}
+  width: 4%;
+}/*# sourceMappingURL=NavStyle.css.map */
