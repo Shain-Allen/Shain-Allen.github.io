@@ -1,45 +1,6 @@
-/*nav bar content*/
-nav {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	width: 100%;
-	background-color: rgb(56, 60, 62);
-}
-
-nav h1 {
-	font-size: medium;
-}
-
-nav .NamePlate {
-	width: auto;
-	padding-left: 1ch;
-	padding-right: 1ch;
-	min-height: 25px;
-	/*background-color: green;*/
-}
-
-nav .Pages {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	width: 20%;
-	min-height: 25px;
-}
-
-nav h1 {
-	color: rgba(255, 255, 255, 0.751);
-}
-
-nav .gap {
-	width: 4%;
-	/*background-color: azure;*/
-}
+@import url("NavStyle.css");
 
 /*main page*/
-
 body {
 	margin: 0px;
 }
@@ -63,10 +24,11 @@ section {
 	padding-bottom: 1%;
 }
 
-img {
+section a img {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 500px;
+	padding-left: 39%;
 }
 
 section h2 {
