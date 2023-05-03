@@ -37,5 +37,5 @@ nav {
   color: inherit;
 }
 .NavCenter .gap {
-  width: 4%;
+  flex-grow: 1;
 }/*# sourceMappingURL=NavStyle.css.map */
