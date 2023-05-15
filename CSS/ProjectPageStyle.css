@@ -54,4 +54,9 @@ section {
   font-weight: bold;
   font-size: 6vw;
   text-align: center;
-}/*# sourceMappingURL=WOCStyle.css.map */
+}
+
+img {
+  margin: auto;
+  max-width: 100%;
+}/*# sourceMappingURL=ProjectPageStyle.css.map */
