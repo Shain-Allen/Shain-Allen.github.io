@@ -42,4 +42,36 @@ nav {
 
 body {
   margin: 0;
-}/*# sourceMappingURL=VHSStyle.css.map */
+  background-color: whitesmoke;
+}
+
+.gametitle {
+  font-weight: bold;
+  font-size: 6vw;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  margin: auto;
+  max-width: 100%;
+}
+
+article {
+  width: 75%;
+  margin: auto;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+iframe {
+  margin: auto;
+}/*# sourceMappingURL=ProjectPageStyle.css.map */
