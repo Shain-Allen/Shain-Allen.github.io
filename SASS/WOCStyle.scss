@@ -4,4 +4,14 @@ body {
 	margin: 0;
 }
 
-.gametitle {}
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.gametitle {
+	font-weight: bold;
+	font-size: 6vw;
+	text-align: center;
+}

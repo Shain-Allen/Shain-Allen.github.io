@@ -42,4 +42,16 @@ nav {
 
 body {
   margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gametitle {
+  font-weight: bold;
+  font-size: 6vw;
+  text-align: center;
 }/*# sourceMappingURL=WOCStyle.css.map */
