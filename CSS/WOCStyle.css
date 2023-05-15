@@ -1,32 +1,57 @@
 nav {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: center;
   width: 100%;
   background-color: rgb(56, 60, 62);
 }
-nav .NamePlate {
+
+.NavCenter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 50%;
+}
+.NavCenter .NamePlate {
   width: auto;
   padding: 0 1ch 0 1ch;
   min-height: 25px;
+  width: auto;
+  white-space: nowrap;
 }
-nav .Pages {
+.NavCenter .Pages {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  width: 20%;
+  width: auto;
   min-height: 25px;
 }
-nav h1 {
+.NavCenter h1 {
   font-size: medium;
+  padding: 1ch;
   color: rgba(255, 255, 255, 0.751);
 }
-nav a {
+.NavCenter a {
   text-decoration: none;
   color: inherit;
 }
-nav .gap {
-  width: 4%;
+.NavCenter .gap {
+  flex-grow: 1;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gametitle {
+  font-weight: bold;
+  font-size: 6vw;
+  text-align: center;
 }/*# sourceMappingURL=WOCStyle.css.map */

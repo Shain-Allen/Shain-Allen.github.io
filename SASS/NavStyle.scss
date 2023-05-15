@@ -1,15 +1,23 @@
 nav {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: center;
 	width: 100%;
 	background-color: rgb(56, 60, 62);
+}
+
+.NavCenter {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	width: 50%;
 
 	.NamePlate {
 		width: auto;
 		padding: 0 1ch 0 1ch;
 		min-height: 25px;
+		width: auto;
+		white-space: nowrap;
 	}
 
 	.Pages {
@@ -17,12 +25,13 @@ nav {
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: space-around;
-		width: 20%;
+		width: auto;
 		min-height: 25px;
 	}
 
 	h1 {
 		font-size: medium;
+		padding: 1ch;
 		color: rgba(255, 255, 255, 0.751);
 	}
 
@@ -32,6 +41,6 @@ nav {
 	}
 
 	.gap {
-		width: 4%;
+		flex-grow: 1;
 	}
 }
