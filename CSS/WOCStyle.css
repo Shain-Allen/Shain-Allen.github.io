@@ -55,6 +55,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: url(../images/World_Of_Color-Background.png);
 }
 
 img {
@@ -68,10 +69,11 @@ article {
 }
 
 p {
+  color: rgb(255, 200, 37);
   font-size: 2rem;
   font-weight: bolder;
 }
 
 iframe {
   margin: auto;
-}/*# sourceMappingURL=ProjectPageStyle.css.map */
+}/*# sourceMappingURL=WOCStyle.css.map */
