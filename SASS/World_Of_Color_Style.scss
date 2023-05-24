@@ -62,21 +62,26 @@ nav {
 	grid-area: 2 / 2 / 3 / 3;
 	background-color: $primary-color;
 
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 3em;
-	padding: 0 3em 3em;
-}
-
-section {
-	max-width: 100%;
+	padding: 0 0 3em;
 
 	h2 {
 		text-align: center;
 	}
 
 	img {
-		max-width: 100%;
+		display: block;
+		width: 75%;
+		margin: auto;
+	}
+
+	p {
+		width: 50%;
+		margin: 1em auto 1em;
+	}
+
+	iframe {
+		display: block;
+		margin: auto;
 	}
 }
 

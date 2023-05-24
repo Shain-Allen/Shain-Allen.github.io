@@ -62,21 +62,53 @@ nav {
 	grid-area: 2 / 2 / 3 / 3;
 	background-color: $primary-color;
 
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 3em;
-	padding: 0 3em 3em;
-}
+	padding-bottom: 3em;
 
-section {
-	max-width: 100%;
-
-	h2 {
+	h2,
+	h3 {
 		text-align: center;
 	}
 
 	img {
-		max-width: 100%;
+		display: block;
+		height: 300px;
+		margin: auto;
+	}
+
+	p {
+		width: 55%;
+		margin: 2em auto 2em;
+		font-size: larger;
+	}
+
+	hr {
+		width: 50%;
+		height: .25em;
+		border: 0 none;
+		background-color: $accent-color;
+	}
+
+	li {
+		color: $text-color;
+	}
+
+	.Skills {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+
+		div {
+			margin: 0 1em 0;
+		}
+
+		h3 {
+			margin: 0;
+		}
+
+		ul {
+			padding-left: 1em;
+			margin: .25em;
+		}
 	}
 }
 
