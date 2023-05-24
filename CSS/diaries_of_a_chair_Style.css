@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 5em 1fr 15em;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #ceb9c2;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #ceb9c2;
+}
+
+nav {
+  background-color: #69706b;
+}
+nav .NavCenter {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em 0;
+}
+nav .NavCenter h1 {
+  font-size: 2em;
+}
+nav .NavCenter h2 {
+  font-size: 1.5em;
+}
+nav .NavCenter .Pages {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.MainBody {
+  grid-area: 2/2/3/3;
+  background-color: #4d5836;
+  padding: 0 0 3em;
+}
+.MainBody h2 {
+  text-align: center;
+}
+.MainBody img {
+  display: block;
+  width: 75%;
+  margin: auto;
+}
+.MainBody p {
+  width: 50%;
+  margin: 1em auto 1em;
+}
+.MainBody iframe {
+  display: block;
+  margin: auto;
+}
+
+footer {
+  grid-area: 3/2/4/3;
+  background-color: #69706b;
+}
+footer h1 {
+  text-align: center;
+}
+footer .FooterIcons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+footer .FooterIcons img {
+  max-height: 100px;
+  margin: 0 1em 0;
+}
+footer address {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 1em;
+}
+footer address a {
+  margin: 0 1em 0;
+}
+
+.Sidebar1 {
+  grid-area: 1/1/4/2;
+  background-color: #69706b;
+}
+
+.Sidebar2 {
+  grid-area: 1/3/4/4;
+  background-color: #69706b;
+}/*# sourceMappingURL=diaries_of_a_chair_Style.css.map */
