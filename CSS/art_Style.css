@@ -56,7 +56,8 @@ nav .NavCenter .Pages {
   padding: 0 0 3em;
   min-height: 80%;
 }
-.MainBody h2 {
+.MainBody h2,
+.MainBody h3 {
   text-align: center;
 }
 .MainBody p {
@@ -114,7 +115,7 @@ nav .NavCenter .Pages {
   top: 0;
 }
 
-.slidepos {
+.deckDots {
   width: 50%;
   margin: auto;
   text-align: center;
