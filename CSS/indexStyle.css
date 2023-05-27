@@ -102,21 +102,50 @@ html {
     background-color: #69706b;
   }
 }
-@media (min-aspect-ratio: 9/16) and (max-aspect-ratio: 1/1) {
+@media (max-aspect-ratio: 1/1) {
+  .Sidebar1,
+  .Sidebar2 {
+    display: none;
+  }
+  h1,
+  h2,
+  h3,
+  p {
+    color: #ceb9c2;
+    margin: 0;
+    padding: 0;
+  }
+  a,
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: #ceb9c2;
+  }
   body {
-    grid-template-columns: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  nav {
+    background-color: #69706b;
+  }
+  nav .NavCenter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
   }
   nav .NavCenter h1 {
-    font-size: 2em;
+    font-size: 3em;
+    padding-left: 0.3em;
   }
   nav .NavCenter .Pages {
     display: none;
   }
   nav .NavCenter .menu-icon {
-    display: block;
     cursor: pointer;
-    float: right;
-    padding: 28px 25px;
+    padding: 2em 2em;
     position: relative;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -125,26 +154,27 @@ html {
   nav .NavCenter .menu-icon .navicon {
     background-color: #c7d6ed;
     display: block;
-    height: 5px;
+    height: 4px;
     position: relative;
-    transition: background 0.2s ease-out;
-    width: 60px;
+    width: 45px;
   }
   nav .NavCenter .menu-icon .navicon::before,
   nav .NavCenter .menu-icon .navicon::after {
-    background-color: #ffffff;
-    content: "";
+    background-color: #c7d6ed;
     display: block;
+    content: "";
     height: 100%;
-    position: absolute;
-    transition: all 0.2s ease-out;
     width: 100%;
+    position: absolute;
   }
   nav .NavCenter .menu-icon .navicon::before {
-    top: -15px;
+    top: 1em;
   }
   nav .NavCenter .menu-icon .navicon::after {
-    top: 15px;
+    top: -1em;
+  }
+  nav .NavCenter .menu-btn {
+    display: none;
   }
   nav .NavCenter .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
@@ -158,38 +188,58 @@ html {
     top: 0;
   }
   nav .NavCenter .menu-btn:checked ~ .Pages {
-    position: absolute;
-    top: 83px;
-    right: 0;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 0;
-    width: 100%;
-  }
-  nav .NavCenter .menu-btn:checked ~ .Pages a {
-    margin: 0;
-  }
-  nav .NavCenter .menu-btn:checked ~ .Pages a h2 {
     display: block;
-    margin: 0;
-    text-align: center;
     background-color: #69706b;
+    position: absolute;
+    top: 4em;
+    right: 0;
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    width: 100%;
+    text-align: end;
   }
   .MainBody {
-    grid-area: 2/1/3/2;
+    background-color: #4d5836;
     display: flex;
     flex-flow: column nowrap;
-    align-items: stretch;
-    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1em;
+  }
+  .MainBody section {
+    width: 80%;
+    margin: 1em 0 1em 0;
+  }
+  .MainBody section h2 {
+    text-align: center;
+  }
+  .MainBody section img {
+    width: 100%;
   }
   footer {
-    grid-area: 3/1/4/2;
+    background-color: #69706b;
+  }
+  footer h1 {
+    text-align: center;
+  }
+  footer .FooterIcons {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
   }
   footer .FooterIcons img {
-    max-height: 55px;
+    width: 75px;
+    margin: 0 0.25em;
   }
-  .Sidebar1,
-  .Sidebar2 {
+  footer address {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  footer address a {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  footer address b {
     display: none;
   }
 }/*# sourceMappingURL=indexStyle.css.map */
