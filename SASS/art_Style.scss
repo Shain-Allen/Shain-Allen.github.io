@@ -55,6 +55,11 @@ html {
 				font-size: 1.5em;
 			}
 
+			.menu-btn,
+			.menu-icon {
+				display: none;
+			}
+
 			.Pages {
 				display: flex;
 				flex-flow: row nowrap;

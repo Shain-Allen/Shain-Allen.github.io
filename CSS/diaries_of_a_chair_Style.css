@@ -41,6 +41,10 @@ html {
   nav .NavCenter h2 {
     font-size: 1.5em;
   }
+  nav .NavCenter .menu-btn,
+  nav .NavCenter .menu-icon {
+    display: none;
+  }
   nav .NavCenter .Pages {
     display: flex;
     flex-flow: row nowrap;
