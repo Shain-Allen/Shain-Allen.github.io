@@ -289,7 +289,7 @@ html {
     flex-grow: 2;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 1em 0 2em 0;
+    padding: 0 0 2em 0;
   }
   .MainBody h2 {
     margin-top: 2em;
