@@ -291,6 +291,15 @@ html {
     align-items: center;
     padding: 1em 0 2em 0;
   }
+  .MainBody h2 {
+    margin-top: 2em;
+  }
+  .MainBody h3 {
+    margin-top: 1em;
+  }
+  .MainBody img {
+    width: 75%;
+  }
   /* Slideshow container */
   .slideshow-container {
     max-width: 85%;
