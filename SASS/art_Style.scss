@@ -86,6 +86,13 @@ html {
 			width: 50%;
 			margin: 1em auto 1em;
 		}
+
+		img {
+			display: block;
+			margin: auto;
+
+			max-width: 70%;
+		}
 	}
 
 	/* Slideshow container */
@@ -331,6 +338,7 @@ html {
 
 				~.Pages {
 					display: block;
+					z-index: 10;
 					background-color: $accent-color;
 					position: absolute;
 					top: 4em;
@@ -355,7 +363,19 @@ html {
 		flex-flow: column nowrap;
 		align-items: center;
 
-		padding: 1em 0 2em 0;
+		padding: 0 0 2em 0;
+
+		h2 {
+			margin-top: 2em;
+		}
+
+		h3 {
+			margin-top: 1em;
+		}
+
+		img {
+			width: 75%;
+		}
 	}
 
 	/* Slideshow container */
