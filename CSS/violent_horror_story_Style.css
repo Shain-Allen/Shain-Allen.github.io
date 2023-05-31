@@ -68,6 +68,12 @@ html {
     width: 50%;
     margin: 1em auto 1em;
   }
+  .MainBody iframe {
+    display: block;
+    margin: auto;
+    width: 1280px;
+    height: 720px;
+  }
   footer {
     grid-area: 3/2/4/3;
     background-color: #69706b;
@@ -216,6 +222,12 @@ html {
   .MainBody p {
     padding-top: 3em;
     width: 60%;
+  }
+  .MainBody iframe {
+    display: block;
+    margin: auto;
+    width: 256px;
+    height: 144px;
   }
   footer {
     background-color: #69706b;

@@ -89,6 +89,13 @@ html {
 			width: 50%;
 			margin: 1em auto 1em;
 		}
+
+		iframe {
+			display: block;
+			margin: auto;
+			width: 1280px;
+			height: 720px;
+		}
 	}
 
 	footer {
@@ -279,6 +286,13 @@ html {
 		p {
 			padding-top: 3em;
 			width: 60%;
+		}
+
+		iframe {
+			display: block;
+			margin: auto;
+			width: 256px;
+			height: 144px;
 		}
 	}
 
