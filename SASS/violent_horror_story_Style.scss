@@ -4,6 +4,8 @@ $accent-color: #69706b;
 $primary-button: #c7d6ed;
 $secondary-button: #ffffff;
 
+@use "fontControl";
+
 html {
 	height: 100%;
 }
@@ -75,7 +77,8 @@ html {
 
 		padding: 0 0 3em;
 
-		h2 {
+		h2,
+		h3 {
 			text-align: center;
 		}
 
