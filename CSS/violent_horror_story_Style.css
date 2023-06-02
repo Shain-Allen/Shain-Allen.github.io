@@ -23,7 +23,8 @@ h2 {
 }
 
 b,
-a {
+a,
+li {
   font-family: Oswald-Regular, sans-serif;
 }
 
@@ -45,7 +46,8 @@ html {
   h1,
   h2,
   h3,
-  p {
+  p,
+  li {
     color: #ceb9c2;
   }
   a,
@@ -89,14 +91,30 @@ html {
   .MainBody h3 {
     text-align: center;
   }
+  .MainBody p {
+    width: 50%;
+    margin: 1em auto 1em;
+    font-size: large;
+  }
+  .MainBody .ulContainer {
+    text-align: center;
+  }
+  .MainBody ul {
+    display: inline-block;
+    margin: auto;
+    list-style: square;
+    font-size: large;
+    text-align: left;
+  }
   .MainBody img {
     display: block;
     width: 75%;
     margin: auto;
   }
-  .MainBody p {
-    width: 50%;
-    margin: 1em auto 1em;
+  .MainBody hr {
+    width: 80%;
+    height: 8px;
+    background-color: #69706b;
   }
   .MainBody iframe {
     display: block;
@@ -146,7 +164,8 @@ html {
   h1,
   h2,
   h3,
-  p {
+  p,
+  li {
     color: #ceb9c2;
     margin: 0;
     padding: 0;
@@ -252,6 +271,11 @@ html {
   .MainBody p {
     padding-top: 3em;
     width: 60%;
+  }
+  .MainBody hr {
+    width: 80%;
+    height: 4px;
+    background-color: #69706b;
   }
   .MainBody iframe {
     display: block;

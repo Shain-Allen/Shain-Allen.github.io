@@ -27,7 +27,8 @@ html {
 	h1,
 	h2,
 	h3,
-	p {
+	p,
+	li {
 		color: $text-color;
 	}
 
@@ -82,15 +83,34 @@ html {
 			text-align: center;
 		}
 
+		p {
+			width: 50%;
+			margin: 1em auto 1em;
+			font-size: large;
+		}
+
+		.ulContainer {
+			text-align: center;
+		}
+
+		ul {
+			display: inline-block;
+			margin: auto;
+			list-style: square;
+			font-size: large;
+			text-align: left;
+		}
+
 		img {
 			display: block;
 			width: 75%;
 			margin: auto;
 		}
 
-		p {
-			width: 50%;
-			margin: 1em auto 1em;
+		hr {
+			width: 80%;
+			height: 8px;
+			background-color: $accent-color;
 		}
 
 		iframe {
@@ -156,7 +176,8 @@ html {
 	h1,
 	h2,
 	h3,
-	p {
+	p,
+	li {
 		color: $text-color;
 		margin: 0;
 		padding: 0;
@@ -289,6 +310,12 @@ html {
 		p {
 			padding-top: 3em;
 			width: 60%;
+		}
+
+		hr {
+			width: 80%;
+			height: 4px;
+			background-color: $accent-color;
 		}
 
 		iframe {
