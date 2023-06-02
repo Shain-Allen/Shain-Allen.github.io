@@ -80,13 +80,23 @@ $secondary-button: #ffffff;
 	}
 
 	section {
-		max-width: 100%;
+
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
 
 		h2 {
 			text-align: center;
 		}
 
+		a {
+			display: inline-block;
+			max-width: 100%;
+		}
+
 		img {
+			display: block;
+			margin: 0;
 			max-width: 100%;
 		}
 	}
