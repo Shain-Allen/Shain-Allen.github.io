@@ -27,7 +27,8 @@ html {
 	h1,
 	h2,
 	h3,
-	p {
+	p,
+	b {
 		color: $text-color;
 	}
 
@@ -96,6 +97,13 @@ html {
 			display: block;
 			margin: auto;
 		}
+
+		#youtubeVid {
+			display: block;
+			margin: auto;
+			width: 1280px;
+			height: 720px;
+		}
 	}
 
 	footer {
@@ -153,7 +161,8 @@ html {
 	h1,
 	h2,
 	h3,
-	p {
+	p,
+	b {
 		color: $text-color;
 		margin: 0;
 		padding: 0;
@@ -286,6 +295,13 @@ html {
 
 		iframe {
 			width: 80%;
+		}
+
+		#youtubeVid {
+			display: block;
+			margin: auto;
+			width: 256px;
+			height: 144px;
 		}
 	}
 

@@ -23,7 +23,8 @@ h2 {
 }
 
 b,
-a {
+a,
+li {
   font-family: Oswald-Regular, sans-serif;
 }
 
@@ -45,7 +46,8 @@ html {
   h1,
   h2,
   h3,
-  p {
+  p,
+  b {
     color: #ceb9c2;
   }
   a,
@@ -101,6 +103,12 @@ html {
     display: block;
     margin: auto;
   }
+  .MainBody #youtubeVid {
+    display: block;
+    margin: auto;
+    width: 1280px;
+    height: 720px;
+  }
   footer {
     grid-area: 3/2/4/3;
     background-color: #69706b;
@@ -143,7 +151,8 @@ html {
   h1,
   h2,
   h3,
-  p {
+  p,
+  b {
     color: #ceb9c2;
     margin: 0;
     padding: 0;
@@ -249,6 +258,12 @@ html {
   }
   .MainBody iframe {
     width: 80%;
+  }
+  .MainBody #youtubeVid {
+    display: block;
+    margin: auto;
+    width: 256px;
+    height: 144px;
   }
   footer {
     background-color: #69706b;
