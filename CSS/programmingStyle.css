@@ -85,22 +85,21 @@ html {
     grid-area: 2/2/3/3;
     background-color: #4d5836;
     padding: 0 0 3em;
+    min-height: 80%;
   }
-  .MainBody h2 {
+  .MainBody h2,
+  .MainBody h3 {
     text-align: center;
-  }
-  .MainBody img {
-    display: block;
-    width: 75%;
-    margin: auto;
   }
   .MainBody p {
     width: 50%;
     margin: 1em auto 1em;
+    text-align: center;
   }
-  .MainBody iframe {
+  .MainBody img {
     display: block;
     margin: auto;
+    max-width: 70%;
   }
   footer {
     grid-area: 3/2/4/3;
@@ -223,6 +222,7 @@ html {
   }
   nav .NavCenter .menu-btn:checked ~ .Pages {
     display: block;
+    z-index: 10;
     background-color: #69706b;
     position: absolute;
     top: 4em;
@@ -239,17 +239,16 @@ html {
     flex-grow: 2;
     flex-flow: column nowrap;
     align-items: center;
-    padding-bottom: 2em;
+    padding: 0 0 2em 0;
+  }
+  .MainBody h2 {
+    margin-top: 2em;
+  }
+  .MainBody h3 {
+    margin-top: 1em;
   }
   .MainBody img {
-    width: 100%;
-  }
-  .MainBody article {
-    margin: 2em 0 3em 0;
     width: 75%;
-  }
-  .MainBody iframe {
-    width: 80%;
   }
   footer {
     background-color: #69706b;
@@ -277,4 +276,4 @@ html {
   footer address b {
     display: none;
   }
-}/*# sourceMappingURL=diaries_of_a_chair_Style.css.map */
+}/*# sourceMappingURL=programmingStyle.css.map */
