@@ -4,7 +4,7 @@
 
 <head>
 	<title>Shain Allen Portfolio</title>
-	<link rel="stylesheet" href="../CSS/WOCStyle.css">
+	<link rel="stylesheet" href="../CSS/World_Of_Color_Style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -14,32 +14,100 @@
 	<nav>
 		<div class="NavCenter">
 			<div class="NamePlate">
-				<h1><a href="../index.html">Shain Allen - Programmer &amp; Game Designer</a></h1>
+				<h1><a href="/index.html">Shain Allen <!--- Programmer &amp; Game Designer--> </a></h1>
 			</div>
-			<div class="gap"></div>
+
+			<input class="menu-btn" type="checkbox" id="menu-btn">
+			<label class="menu-icon" for="menu-btn">
+				<span class="navicon"></span>
+			</label>
+
 			<div class="Pages">
-				<h1>Programming</h1>
-				<h1>Art</h1>
-				<h1>Design</h1>
-				<h1>About</h1>
+				<a href="programming.html">
+					<h2>Programming</h2>
+				</a>
+				<a href="art.html">
+					<h2>Art</h2>
+				</a>
+				<a href="about.html">
+					<h2>About</h2>
+				</a>
 			</div>
 		</div>
 	</nav>
 
-	<section>
+	<div class="MainBody">
 		<img src="../images/World_Of_Color-Title.png" alt="World of color banner" width="100%">
-		<article>
-			<p>World of Color is a 2D top-down rpg video game that is art and fantasy themed, in
-				which you are a young hero artist who must purify the World of the evil monsters who want to
-				purge it of all color.
-			</p>
-		</article>
-		<iframe frameborder="0"
-			src="https://itch.io/embed/663629?border_width=0&amp;bg_color=6d2e6f&amp;fg_color=0098dc" width="552"
-			height="167"><a href="https://wanicdigipen.itch.io/world-of-color">World Of Color 2020 by
-				wanicdigipen</a></iframe>
-	</section>
+		<p>World of Color is a 2D top-down rpg video game that is art and fantasy themed, in
+			which you are a young hero artist who must purify the World of the evil monsters who want to
+			purge it of all color.
+		</p>
 
+		<iframe id="youtubeVid" src="https://www.youtube.com/embed/SOTX7yOjMNk"></iframe>
+
+		<iframe frameborder="0"
+			src="https://itch.io/embed/663629?border_width=0&amp;bg_color=4d5836&amp;fg_color=ceb9c2&amp;link_color=c7d6ed&amp;border_color=69706b"
+			width="552" height="167"><a href="https://wanicdigipen.itch.io/world-of-color">World Of Color 2020 by
+				wanicdigipen</a></iframe>
+
+		<p>World of Color is a Game I made during my Senior year of highschool through a Program called WANIC in a class
+			hosted by Digipen. it took place over 4 weeks with a team of 7 (3 programmers, 3 artists, and 1 sound
+			designer), where I took up the role of Lead Tech/Programmer.</p>
+
+		<p>the goal of the project was to make a vertical slice of a game where all the features were represented in a
+			single small level. it started off with people who had ideas doing pitch presentations, then "hiring" people
+			onto their team. Once teams were assembled we continued brainstorming what direction and scope the game
+			should have based on what was presented in the pitch presentation.</p>
+
+		<p>the base concept we landed on was a 2D top-down rpg where you are a hero who lives in a world of color and
+			art, however, evil entities have descended upon the world to drain it of its color. So using your paintbrush
+			sword you must set out into danger and defeat this threat and return color back to the world</p>
+
+		<p>Due to having 3 programmers on the team for such a small project, I had to focus more on leading and
+			coordinating instead of making features. However, I did make a few key features of the game such as the
+			Shader that controls how much color is in the world based on the remaining enemies, and also was applied to
+			represent the player's health by draining the color from their body as you take damage. I also made the
+			system that controls the audio mix that allows for more of the instruments to start playing as you remove
+			monsters from each area</p>
+
+		<hr>
+		<h3>Software used</h3>
+		<div class="ulContainer">
+			<ul>
+				<li>Game Engine: Unity 2019.3.13f1</li>
+				<li>Art Software: Photoshop, Aseprite, Piskel</li>
+				<li>Version Control: Git Via Github</li>
+				<li>Planning &amp; communication: Discord, Trello</li>
+				<li>task managment: Trello</li>
+			</ul>
+		</div>
+	</div>
+
+	<footer>
+		<h1>Info</h1>
+		<div class="FooterIcons">
+			<a href="https://github.com/Shain-Allen" target="_blank">
+				<img src="../images/GitHub-logo.png">
+			</a>
+			<a href="https://www.linkedin.com/in/shain-allen/" target="_blank">
+				<img src="../images/Linked-In.png">
+			</a>
+			<a href="https://twitter.com/shainismad" target="_blank">
+				<img src="../images/2021 Twitter logo - blue.png">
+			</a>
+			<a href="https://steamcommunity.com/profiles/76561198145162012/" target="_blank">
+				<img src="../images/Steam_icon_logo.png">
+			</a>
+		</div>
+		<address>
+			<a href="Shainallen96@yahoo.com" target="_blank">Email: Shainallen96@yahoo.com</a>
+			<b>&nbsp;|&nbsp;</b>
+			<a href="(425)-941-1051" target="_blank">Phone: (425)-941-1051</a>
+		</address>
+	</footer>
+
+	<div class="Sidebar1"></div>
+	<div class="Sidebar2"></div>
 </body>
 
 </html>

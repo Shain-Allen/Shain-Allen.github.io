@@ -1,88 +1,326 @@
-@use 'NavStyle';
+$text-color: #ceb9c2;
+$primary-color: #4d5836;
+$accent-color: #69706b;
+$primary-button: #c7d6ed;
+$secondary-button: #ffffff;
 
-body {
-	margin: 0px;
+@use "fontControl";
 
-}
+//desktop Layout
+@media(min-aspect-ratio: 1/1) {
+	body {
+		margin: 0;
+		padding: 0;
 
-.mainBody {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 100%;
-	min-height: 600px;
-	background-color: rgba(255, 228, 196, 0.478);
-}
+		min-height: 100%;
 
-section {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 675px;
-	max-width: 75%;
-	min-height: 100px;
-	background-color: rgb(0, 60, 60);
-	padding-bottom: 1%;
-	margin: auto;
+		display: grid;
+		grid-template-columns: 10% 80% 10%;
+		grid-template-rows: 5em 1fr 15em;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
 
-	a {
-		max-width: 100%;
-		margin: auto;
+	h1,
+	h2,
+	h3,
+	p {
+		color: $text-color;
+	}
 
-		img {
-			max-height: 100%;
-			max-width: 500px;
+	a,
+	a:link,
+	a:visited {
+		text-decoration: none;
+		color: $text-color;
+	}
+
+	nav {
+		background-color: $accent-color;
+
+
+		.NavCenter {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 2em 0;
+
+			h1 {
+				font-size: 2em;
+
+			}
+
+			h2 {
+				font-size: 1.5em;
+			}
+
+			.menu-btn,
+			.menu-icon {
+				display: none;
+			}
+
+			.Pages {
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: space-between;
+				gap: 2em;
+			}
 		}
 	}
 
-	h2 {
-		text-align: center;
-		color: azure;
+	.MainBody {
+		grid-area: 2 / 2 / 3 / 3;
+		background-color: $primary-color;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 3em;
+		padding: 0 3em 3em;
 	}
 
-	p {
-		width: 50%;
-		padding-left: 25%;
-		color: white;
+	section {
+
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+
+		h2 {
+			text-align: center;
+		}
 
 		a {
-			color: rgb(255, 0, 0);
+			display: inline-block;
+			max-width: 100%;
+		}
+
+		img {
+			display: block;
+			margin: 0;
+			max-width: 100%;
 		}
 	}
-}
 
-footer {
-	align-self: center;
-	background-color: rgb(36, 29, 30);
-	padding: 0.1% 0% 2% 0%;
+	footer {
+		grid-area: 3 / 2 / 4 / 3;
+		background-color: $accent-color;
 
-	h1 {
-		text-align: center;
-		color: white;
+		h1 {
+			text-align: center;
+		}
+
+		.FooterIcons {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+
+			img {
+				max-height: 100px;
+				margin: 0 1em 0;
+			}
+		}
+
+		address {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+
+			margin-top: 1em;
+
+			a {
+				margin: 0 1em 0;
+			}
+		}
+	}
+
+	.Sidebar1 {
+		grid-area: 1 / 1 / 4 / 2;
+		background-color: $accent-color;
+	}
+
+	.Sidebar2 {
+		grid-area: 1 / 3 / 4 / 4;
+		background-color: $accent-color;
 	}
 }
 
-address {
-	text-align: center;
+//phone Layout
+@media (max-aspect-ratio: 1/1) {
 
-	a {
-		color: white;
-	}
-}
-
-.FooterIcons {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	padding-bottom: 0.5%;
-
-	a {
-		padding: 0% 0.5% 0% 0.5%;
+	.Sidebar1,
+	.Sidebar2 {
+		display: none;
 	}
 
-	img {
-		width: 50px;
+	h1,
+	h2,
+	h3,
+	p {
+		color: $text-color;
+		margin: 0;
+		padding: 0;
+	}
+
+	a,
+	a:link,
+	a:visited {
+		text-decoration: none;
+		color: $text-color;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+
+		min-height: 100%;
+
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	nav {
+		background-color: $accent-color;
+
+		.NavCenter {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+
+			h1 {
+				font-size: 3em;
+				padding-left: .3em;
+			}
+
+			.Pages {
+				display: none;
+			}
+
+			.menu-icon {
+				cursor: pointer;
+				padding: 2em 2em;
+				position: relative;
+				user-select: none;
+
+				.navicon {
+					background-color: $primary-button;
+					display: block;
+					height: 4px;
+					position: relative;
+					width: 45px;
+				}
+
+				.navicon::before,
+				.navicon::after {
+					background-color: $primary-button;
+					display: block;
+					content: "";
+					height: 100%;
+					width: 100%;
+					position: absolute
+				}
+
+				.navicon::before {
+					top: 1em;
+				}
+
+				.navicon::after {
+					top: -1em;
+				}
+			}
+
+			.menu-btn {
+				display: none;
+			}
+
+			.menu-btn:checked {
+				~.menu-icon {
+					.navicon {
+						background: transparent;
+					}
+
+					.navicon::before {
+						transform: rotate(-45deg);
+						top: 0;
+					}
+
+					.navicon::after {
+						transform: rotate(45deg);
+						top: 0;
+					}
+				}
+
+				~.Pages {
+					display: block;
+					background-color: $accent-color;
+					position: absolute;
+					top: 4em;
+					right: 0;
+					padding-top: 1em;
+					padding-right: 2em;
+					padding-bottom: 1em;
+					width: 100%;
+					text-align: end;
+				}
+			}
+
+
+		}
+	}
+
+	.MainBody {
+		background-color: $primary-color;
+
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+
+		padding-bottom: 1em;
+
+		section {
+			width: 80%;
+			margin: 1em 0 1em 0;
+
+			h2 {
+				text-align: center;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	footer {
+		background-color: $accent-color;
+
+		h1 {
+			text-align: center;
+		}
+
+		.FooterIcons {
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+
+			img {
+				width: 75px;
+				margin: 0 .25em;
+			}
+		}
+
+
+		address {
+			display: flex;
+			flex-flow: column nowrap;
+
+			a {
+				text-align: center;
+				font-size: 1.5rem;
+			}
+
+			b {
+				display: none;
+			}
+		}
 	}
 }
