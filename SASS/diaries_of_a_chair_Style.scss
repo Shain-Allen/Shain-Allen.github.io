@@ -4,6 +4,8 @@ $accent-color: #69706b;
 $primary-button: #c7d6ed;
 $secondary-button: #ffffff;
 
+@use "fontControl";
+
 html {
 	height: 100%;
 }

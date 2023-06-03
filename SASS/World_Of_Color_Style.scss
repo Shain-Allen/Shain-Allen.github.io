@@ -4,6 +4,8 @@ $accent-color: #69706b;
 $primary-button: #c7d6ed;
 $secondary-button: #ffffff;
 
+@use "fontControl";
+
 html {
 	height: 100%;
 }
@@ -25,7 +27,8 @@ html {
 	h1,
 	h2,
 	h3,
-	p {
+	p,
+	li {
 		color: $text-color;
 	}
 
@@ -75,7 +78,8 @@ html {
 
 		padding: 0 0 3em;
 
-		h2 {
+		h2,
+		h3 {
 			text-align: center;
 		}
 
@@ -90,9 +94,34 @@ html {
 			margin: 1em auto 1em;
 		}
 
+		.ulContainer {
+			text-align: center;
+		}
+
+		ul {
+			display: inline-block;
+			margin: auto;
+			list-style: square;
+			font-size: large;
+			text-align: left;
+		}
+
+		hr {
+			width: 80%;
+			height: 8px;
+			background-color: $accent-color;
+		}
+
 		iframe {
 			display: block;
 			margin: auto;
+		}
+
+		#youtubeVid {
+			display: block;
+			margin: auto;
+			width: 1280px;
+			height: 720px;
 		}
 	}
 
@@ -151,7 +180,8 @@ html {
 	h1,
 	h2,
 	h3,
-	p {
+	p,
+	li {
 		color: $text-color;
 		margin: 0;
 		padding: 0;
@@ -277,13 +307,26 @@ html {
 			width: 100%;
 		}
 
-		article {
-			margin: 2em 0 3em 0;
-			width: 75%;
+		p {
+			padding-top: 3em;
+			width: 60%;
+		}
+
+		hr {
+			width: 80%;
+			height: 4px;
+			background-color: $accent-color;
 		}
 
 		iframe {
 			width: 80%;
+		}
+
+		#youtubeVid {
+			display: block;
+			margin: auto;
+			width: 256px;
+			height: 144px;
 		}
 	}
 

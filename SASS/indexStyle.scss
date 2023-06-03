@@ -4,9 +4,7 @@ $accent-color: #69706b;
 $primary-button: #c7d6ed;
 $secondary-button: #ffffff;
 
-html {
-	height: 100%;
-}
+@use "fontControl";
 
 //desktop Layout
 @media(min-aspect-ratio: 1/1) {
@@ -50,6 +48,7 @@ html {
 
 			h1 {
 				font-size: 2em;
+
 			}
 
 			h2 {
@@ -81,13 +80,23 @@ html {
 	}
 
 	section {
-		max-width: 100%;
+
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
 
 		h2 {
 			text-align: center;
 		}
 
+		a {
+			display: inline-block;
+			max-width: 100%;
+		}
+
 		img {
+			display: block;
+			margin: 0;
 			max-width: 100%;
 		}
 	}

@@ -1,5 +1,31 @@
+@font-face {
+  font-family: Oswald-Regular;
+  src: url(/fonts/Oswald-Regular.ttf);
+}
+@font-face {
+  font-family: Oswald-Medium;
+  src: url(/fonts/Oswald-Medium.ttf);
+}
+@font-face {
+  font-family: Oswald-Bold;
+  src: url(/fonts/Oswald-Bold.ttf);
+}
 html {
   height: 100%;
+}
+
+h1 {
+  font-family: Oswald-Bold, sans-serif;
+}
+
+h2 {
+  font-family: Oswald-Medium, sans-serif;
+}
+
+b,
+a,
+li {
+  font-family: Oswald-Regular, sans-serif;
 }
 
 @media (min-aspect-ratio: 1/1) {
@@ -60,12 +86,20 @@ html {
     padding: 0 3em 3em;
   }
   section {
-    max-width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
   }
   section h2 {
     text-align: center;
   }
+  section a {
+    display: inline-block;
+    max-width: 100%;
+  }
   section img {
+    display: block;
+    margin: 0;
     max-width: 100%;
   }
   footer {
