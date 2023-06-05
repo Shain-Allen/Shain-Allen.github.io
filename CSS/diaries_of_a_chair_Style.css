@@ -259,6 +259,9 @@ html {
     align-items: center;
     padding-bottom: 2em;
   }
+  .MainBody h2 {
+    font-size: xx-large;
+  }
   .MainBody img {
     width: 100%;
   }

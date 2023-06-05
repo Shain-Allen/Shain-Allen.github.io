@@ -120,8 +120,8 @@ html {
 		#youtubeVid {
 			display: block;
 			margin: auto;
-			width: 1280px;
-			height: 720px;
+			aspect-ratio: 16/9;
+			width: 75%;
 		}
 	}
 

@@ -119,8 +119,8 @@ html {
   .MainBody iframe {
     display: block;
     margin: auto;
-    width: 1280px;
-    height: 720px;
+    aspect-ratio: 16/9;
+    width: 75%;
   }
   footer {
     grid-area: 3/2/4/3;
