@@ -10,10 +10,6 @@
   font-family: Oswald-Bold;
   src: url(/fonts/Oswald-Bold.ttf);
 }
-html {
-  height: 100%;
-}
-
 h1 {
   font-family: Oswald-Bold, sans-serif;
 }
@@ -24,6 +20,7 @@ h2 {
 
 b,
 a,
+p,
 li {
   font-family: Oswald-Regular, sans-serif;
 }
