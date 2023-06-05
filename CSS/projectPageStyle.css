@@ -10,10 +10,6 @@
   font-family: Oswald-Bold;
   src: url(/fonts/Oswald-Bold.ttf);
 }
-html {
-  height: 100%;
-}
-
 h1 {
   font-family: Oswald-Bold, sans-serif;
 }
@@ -24,12 +20,24 @@ h2 {
 
 b,
 a,
+p,
 li {
   font-family: Oswald-Regular, sans-serif;
 }
 
 html {
   height: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+a,
+a:link,
+a:visited {
+  color: #ceb9c2;
 }
 
 @media (min-aspect-ratio: 1/1) {
@@ -43,18 +51,10 @@ html {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
-  h1,
-  h2,
-  h3,
-  p,
-  li {
-    color: #ceb9c2;
-  }
   a,
   a:link,
   a:visited {
     text-decoration: none;
-    color: #ceb9c2;
   }
   nav {
     background-color: #69706b;
@@ -93,7 +93,7 @@ html {
   }
   .MainBody img {
     display: block;
-    width: 75%;
+    width: 65%;
     margin: auto;
   }
   .MainBody p {
@@ -118,6 +118,12 @@ html {
   .MainBody iframe {
     display: block;
     margin: auto;
+  }
+  .MainBody #youtubeVid {
+    display: block;
+    margin: auto;
+    aspect-ratio: 16/9;
+    width: 75%;
   }
   footer {
     grid-area: 3/2/4/3;
@@ -154,16 +160,18 @@ html {
   }
 }
 @media (max-aspect-ratio: 1/1) {
-  .Sidebar1,
-  .Sidebar2 {
-    display: none;
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
   }
   h1,
   h2,
   h3,
   p,
   li {
-    color: #ceb9c2;
     margin: 0;
     padding: 0;
   }
@@ -171,14 +179,10 @@ html {
   a:link,
   a:visited {
     text-decoration: none;
-    color: #ceb9c2;
   }
-  body {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
+  .Sidebar1,
+  .Sidebar2 {
+    display: none;
   }
   nav {
     background-color: #69706b;
@@ -257,20 +261,31 @@ html {
     flex-grow: 2;
     flex-flow: column nowrap;
     align-items: center;
-    padding-bottom: 2em;
+    padding: 1em 0 3em 0;
   }
   .MainBody h2 {
     font-size: xx-large;
   }
-  .MainBody img {
-    width: 100%;
+  .MainBody p {
+    padding: 1em 0 1em 0;
+    width: 60%;
   }
-  .MainBody article {
-    margin: 2em 0 3em 0;
-    width: 75%;
+  .MainBody hr {
+    width: 80%;
+    height: 4px;
+    background-color: #69706b;
+  }
+  .MainBody img {
+    width: 85%;
   }
   .MainBody iframe {
     width: 80%;
+  }
+  .MainBody #youtubeVid {
+    display: block;
+    margin: auto;
+    aspect-ratio: 16/9;
+    width: 75%;
   }
   footer {
     background-color: #69706b;
@@ -298,4 +313,4 @@ html {
   footer address b {
     display: none;
   }
-}/*# sourceMappingURL=diaries_of_a_chair_Style.css.map */
+}/*# sourceMappingURL=projectPageStyle.css.map */

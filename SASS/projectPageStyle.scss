@@ -10,6 +10,17 @@ html {
 	height: 100%;
 }
 
+h1,
+h2,
+h3,
+p,
+li,
+a,
+a:link,
+a:visited {
+	color: $text-color
+}
+
 @media(min-aspect-ratio: 1/1) {
 	body {
 		margin: 0;
@@ -24,19 +35,10 @@ html {
 		grid-row-gap: 0px;
 	}
 
-	h1,
-	h2,
-	h3,
-	p,
-	li {
-		color: $text-color;
-	}
-
 	a,
 	a:link,
 	a:visited {
 		text-decoration: none;
-		color: $text-color;
 	}
 
 	nav {
@@ -169,31 +171,7 @@ html {
 	}
 }
 
-
-
 @media (max-aspect-ratio: 1/1) {
-
-	.Sidebar1,
-	.Sidebar2 {
-		display: none;
-	}
-
-	h1,
-	h2,
-	h3,
-	p,
-	li {
-		color: $text-color;
-		margin: 0;
-		padding: 0;
-	}
-
-	a,
-	a:link,
-	a:visited {
-		text-decoration: none;
-		color: $text-color;
-	}
 
 	body {
 		margin: 0;
@@ -203,6 +181,28 @@ html {
 
 		display: flex;
 		flex-flow: column nowrap;
+	}
+
+	h1,
+	h2,
+	h3,
+	p,
+	li {
+		margin: 0;
+		padding: 0;
+	}
+
+	a,
+	a:link,
+	a:visited {
+		text-decoration: none;
+	}
+
+
+
+	.Sidebar1,
+	.Sidebar2 {
+		display: none;
 	}
 
 	nav {
@@ -301,19 +301,26 @@ html {
 		flex-grow: 2;
 		flex-flow: column nowrap;
 		align-items: center;
-		padding-bottom: 2em;
+
+		padding: 1em 0 3em 0;
 
 		h2 {
 			font-size: xx-large;
 		}
 
-		img {
-			width: 85%;
+		p {
+			padding: 1em 0 1em 0;
+			width: 60%;
 		}
 
-		article {
-			margin: 2em 0 3em 0;
-			width: 75%;
+		hr {
+			width: 80%;
+			height: 4px;
+			background-color: $accent-color;
+		}
+
+		img {
+			width: 85%;
 		}
 
 		iframe {
