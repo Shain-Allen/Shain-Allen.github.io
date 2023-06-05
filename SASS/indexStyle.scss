@@ -77,6 +77,14 @@ $secondary-button: #ffffff;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 3em;
 		padding: 0 3em 3em;
+
+		h2 {
+			grid-column: span 2;
+			text-align: center;
+			font-size: xx-large;
+			margin: 0;
+			margin-bottom: 2%;
+		}
 	}
 
 	section {

@@ -85,6 +85,13 @@ li {
     grid-column-gap: 3em;
     padding: 0 3em 3em;
   }
+  .MainBody h2 {
+    grid-column: span 2;
+    text-align: center;
+    font-size: xx-large;
+    margin: 0;
+    margin-bottom: 2%;
+  }
   section {
     display: flex;
     flex-flow: column nowrap;
