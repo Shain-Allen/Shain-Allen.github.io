@@ -280,8 +280,8 @@ html {
   .MainBody iframe {
     display: block;
     margin: auto;
-    width: 256px;
-    height: 144px;
+    aspect-ratio: 16/9;
+    width: 75%;
   }
   footer {
     background-color: #69706b;
