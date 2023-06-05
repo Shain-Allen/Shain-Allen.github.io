@@ -1,3 +1,5 @@
+$text-color: #ceb9c2;
+
 @font-face {
 	font-family: Oswald-Regular;
 	src: url(/fonts/Oswald-Regular.ttf);
@@ -27,4 +29,16 @@ a,
 p,
 li {
 	font-family: Oswald-Regular, sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+p,
+li,
+a,
+a:link,
+a:visited {
+	color: $text-color
 }

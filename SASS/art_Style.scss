@@ -24,18 +24,10 @@ html {
 		grid-row-gap: 0px;
 	}
 
-	h1,
-	h2,
-	h3,
-	p {
-		color: $text-color;
-	}
-
 	a,
 	a:link,
 	a:visited {
 		text-decoration: none;
-		color: $text-color;
 	}
 
 	nav {
@@ -100,7 +92,7 @@ html {
 	/* Slideshow container */
 	.slideshow-container {
 
-		max-width: 50%;
+		max-width: 100%;
 		position: relative;
 		margin: auto;
 
@@ -130,9 +122,13 @@ html {
 			user-select: none;
 		}
 
+		.prev {
+			left: 15%;
+		}
+
 		/* Position the "next button" to the right */
 		.next {
-			right: 0;
+			right: 15%;
 			border-radius: 3px 0 0 3px;
 		}
 
@@ -146,7 +142,7 @@ html {
 		.numbertext {
 			color: $text-color;
 			font-size: 15px;
-			padding: 8px 12px;
+			padding: 8px 17%;
 			position: absolute;
 			top: 0;
 		}
@@ -245,7 +241,6 @@ html {
 	h2,
 	h3,
 	p {
-		color: $text-color;
 		margin: 0;
 		padding: 0;
 	}
@@ -254,7 +249,6 @@ html {
 	a:link,
 	a:visited {
 		text-decoration: none;
-		color: $text-color;
 	}
 
 	body {
