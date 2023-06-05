@@ -46,7 +46,8 @@ html {
   h1,
   h2,
   h3,
-  p {
+  p,
+  li {
     color: #ceb9c2;
   }
   a,
@@ -86,7 +87,8 @@ html {
     background-color: #4d5836;
     padding: 0 0 3em;
   }
-  .MainBody h2 {
+  .MainBody h2,
+  .MainBody h3 {
     text-align: center;
   }
   .MainBody img {
@@ -97,6 +99,21 @@ html {
   .MainBody p {
     width: 50%;
     margin: 1em auto 1em;
+  }
+  .MainBody .ulContainer {
+    text-align: center;
+  }
+  .MainBody ul {
+    display: inline-block;
+    margin: auto;
+    list-style: square;
+    font-size: large;
+    text-align: left;
+  }
+  .MainBody hr {
+    width: 80%;
+    height: 8px;
+    background-color: #69706b;
   }
   .MainBody iframe {
     display: block;
@@ -144,7 +161,8 @@ html {
   h1,
   h2,
   h3,
-  p {
+  p,
+  li {
     color: #ceb9c2;
     margin: 0;
     padding: 0;
