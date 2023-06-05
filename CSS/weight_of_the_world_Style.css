@@ -119,6 +119,12 @@ html {
     display: block;
     margin: auto;
   }
+  .MainBody #youtubeVid {
+    display: block;
+    margin: auto;
+    aspect-ratio: 16/9;
+    width: 75%;
+  }
   footer {
     grid-area: 3/2/4/3;
     background-color: #69706b;
@@ -271,6 +277,12 @@ html {
   }
   .MainBody iframe {
     width: 80%;
+  }
+  .MainBody #youtubeVid {
+    display: block;
+    margin: auto;
+    aspect-ratio: 16/9;
+    width: 75%;
   }
   footer {
     background-color: #69706b;

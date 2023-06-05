@@ -117,6 +117,13 @@ html {
 			display: block;
 			margin: auto;
 		}
+
+		#youtubeVid {
+			display: block;
+			margin: auto;
+			aspect-ratio: 16/9;
+			width: 75%;
+		}
 	}
 
 	footer {
@@ -311,6 +318,13 @@ html {
 
 		iframe {
 			width: 80%;
+		}
+
+		#youtubeVid {
+			display: block;
+			margin: auto;
+			aspect-ratio: 16/9;
+			width: 75%;
 		}
 	}
 
