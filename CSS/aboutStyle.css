@@ -10,10 +10,6 @@
   font-family: Oswald-Bold;
   src: url(/fonts/Oswald-Bold.ttf);
 }
-html {
-  height: 100%;
-}
-
 h1 {
   font-family: Oswald-Bold, sans-serif;
 }
@@ -24,8 +20,20 @@ h2 {
 
 b,
 a,
+p,
 li {
   font-family: Oswald-Regular, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+a,
+a:link,
+a:visited {
+  color: #ceb9c2;
 }
 
 html {
@@ -43,17 +51,10 @@ html {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
-  h1,
-  h2,
-  h3,
-  p {
-    color: #ceb9c2;
-  }
   a,
   a:link,
   a:visited {
     text-decoration: none;
-    color: #ceb9c2;
   }
   nav {
     background-color: #69706b;
@@ -105,9 +106,6 @@ html {
     height: 0.25em;
     border: 0 none;
     background-color: #69706b;
-  }
-  .MainBody li {
-    color: #ceb9c2;
   }
   .MainBody .Skills {
     display: flex;
@@ -167,7 +165,6 @@ html {
   h2,
   h3,
   p {
-    color: #ceb9c2;
     margin: 0;
     padding: 0;
   }
@@ -175,7 +172,6 @@ html {
   a:link,
   a:visited {
     text-decoration: none;
-    color: #ceb9c2;
   }
   body {
     margin: 0;
@@ -260,6 +256,7 @@ html {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    flex-grow: 2;
     padding: 1em 0 1em 0;
   }
   .MainBody h2 {
