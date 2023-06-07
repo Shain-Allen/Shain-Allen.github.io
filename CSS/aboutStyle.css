@@ -179,7 +179,6 @@ html {
     min-height: 100%;
     display: flex;
     flex-flow: column nowrap;
-    flex-grow: 2;
   }
   nav {
     background-color: #69706b;
@@ -257,6 +256,7 @@ html {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    flex-grow: 2;
     padding: 1em 0 1em 0;
   }
   .MainBody h2 {

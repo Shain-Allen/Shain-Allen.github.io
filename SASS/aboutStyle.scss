@@ -186,7 +186,6 @@ html {
 
 		display: flex;
 		flex-flow: column nowrap;
-		flex-grow: 2;
 	}
 
 	nav {
@@ -284,6 +283,7 @@ html {
 		display: flex;
 		flex-flow: column nowrap;
 		align-items: center;
+		flex-grow: 2;
 
 		padding: 1em 0 1em 0;
 
