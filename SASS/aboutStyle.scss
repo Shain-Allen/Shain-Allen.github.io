@@ -24,18 +24,10 @@ html {
 		grid-row-gap: 0px;
 	}
 
-	h1,
-	h2,
-	h3,
-	p {
-		color: $text-color;
-	}
-
 	a,
 	a:link,
 	a:visited {
 		text-decoration: none;
-		color: $text-color;
 	}
 
 	nav {
@@ -99,10 +91,6 @@ html {
 			height: .25em;
 			border: 0 none;
 			background-color: $accent-color;
-		}
-
-		li {
-			color: $text-color;
 		}
 
 		.Skills {
@@ -180,7 +168,6 @@ html {
 	h2,
 	h3,
 	p {
-		color: $text-color;
 		margin: 0;
 		padding: 0;
 	}
@@ -189,7 +176,6 @@ html {
 	a:link,
 	a:visited {
 		text-decoration: none;
-		color: $text-color;
 	}
 
 	body {
@@ -200,6 +186,7 @@ html {
 
 		display: flex;
 		flex-flow: column nowrap;
+		flex-grow: 2;
 	}
 
 	nav {
