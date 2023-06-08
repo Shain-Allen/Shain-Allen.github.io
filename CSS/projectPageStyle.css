@@ -87,6 +87,14 @@ html {
     background-color: #4d5836;
     padding: 0 0 3em;
   }
+  .MainBody h2 {
+    font-size: 2vw;
+    margin-bottom: 0;
+  }
+  .MainBody h3 {
+    margin-top: 0;
+    font-size: 2vw;
+  }
   .MainBody h2,
   .MainBody h3 {
     text-align: center;
@@ -99,6 +107,7 @@ html {
   .MainBody p {
     width: 50%;
     margin: 1em auto 1em;
+    font-size: 0.85vw;
   }
   .MainBody .ulContainer {
     text-align: center;
@@ -352,7 +361,8 @@ html {
   }
   .MainBody p {
     padding: 1em 0 1em 0;
-    width: 60%;
+    width: 70%;
+    font-size: 4.25vw;
   }
   .MainBody hr {
     width: 80%;
