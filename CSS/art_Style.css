@@ -88,6 +88,12 @@ html {
     padding: 0 0 3em;
     min-height: 80%;
   }
+  .MainBody h2 {
+    font-size: 2vw;
+  }
+  .MainBody h3 {
+    font-size: 1.15vw;
+  }
   .MainBody h2,
   .MainBody h3 {
     text-align: center;
@@ -95,6 +101,7 @@ html {
   .MainBody p {
     width: 50%;
     margin: 1em auto 1em;
+    font-size: 0.85vw;
   }
   .MainBody img {
     display: block;

@@ -361,7 +361,8 @@ html {
   }
   .MainBody p {
     padding: 1em 0 1em 0;
-    width: 60%;
+    width: 70%;
+    font-size: 4.25vw;
   }
   .MainBody hr {
     width: 80%;

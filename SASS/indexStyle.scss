@@ -81,34 +81,37 @@ $secondary-button: #ffffff;
 		h2 {
 			grid-column: span 2;
 			text-align: center;
-			font-size: xx-large;
+			font-size: 3.5vw;
 			margin: 0;
 			margin-bottom: 2%;
 		}
+
+
+		section {
+
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: center;
+
+			h2 {
+				text-align: center;
+				font-size: 1.5vw;
+			}
+
+			a {
+				display: inline-block;
+				max-width: 100%;
+			}
+
+			img {
+				display: block;
+				margin: 0;
+				max-width: 100%;
+				min-height: 25vw;
+			}
+		}
 	}
 
-	section {
-
-		display: flex;
-		flex-flow: column nowrap;
-		align-items: center;
-
-		h2 {
-			text-align: center;
-		}
-
-		a {
-			display: inline-block;
-			max-width: 100%;
-		}
-
-		img {
-			display: block;
-			margin: 0;
-			max-width: 100%;
-			min-height: 25vw;
-		}
-	}
 
 	footer {
 		grid-area: 3 / 2 / 4 / 3;

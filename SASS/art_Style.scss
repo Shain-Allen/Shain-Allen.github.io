@@ -71,6 +71,14 @@ html {
 
 		min-height: 80%;
 
+		h2 {
+			font-size: 2vw;
+		}
+
+		h3 {
+			font-size: 1.15vw;
+		}
+
 		h2,
 		h3 {
 			text-align: center;
@@ -79,6 +87,7 @@ html {
 		p {
 			width: 50%;
 			margin: 1em auto 1em;
+			font-size: .85vw;
 		}
 
 		img {
