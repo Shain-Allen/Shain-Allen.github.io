@@ -99,6 +99,7 @@ html {
   .MainBody p {
     width: 50%;
     margin: 1em auto 1em;
+    font-size: 1vw;
   }
   .MainBody .ulContainer {
     text-align: center;
