@@ -25,6 +25,17 @@ li {
   font-family: Oswald-Regular, sans-serif;
 }
 
+h1,
+h2,
+h3,
+p,
+li,
+a,
+a:link,
+a:visited {
+  color: #ceb9c2;
+}
+
 @media (min-aspect-ratio: 1/1) {
   body {
     margin: 0;
@@ -105,6 +116,7 @@ li {
     display: block;
     margin: 0;
     max-width: 100%;
+    min-height: 25vw;
   }
   footer {
     grid-area: 3/2/4/3;
