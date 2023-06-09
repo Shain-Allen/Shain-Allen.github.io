@@ -24,18 +24,10 @@ html {
 		grid-row-gap: 0px;
 	}
 
-	h1,
-	h2,
-	h3,
-	p {
-		color: $text-color;
-	}
-
 	a,
 	a:link,
 	a:visited {
 		text-decoration: none;
-		color: $text-color;
 	}
 
 	nav {
@@ -84,10 +76,19 @@ html {
 			text-align: center;
 		}
 
+		h2 {
+			font-size: 2vw;
+		}
+
+		h3 {
+			margin-bottom: .5em;
+		}
+
 		p {
 			width: 50%;
 			margin: 1em auto 1em;
 			text-align: center;
+			font-size: .8vw;
 		}
 
 		img {
@@ -95,6 +96,24 @@ html {
 			margin: auto;
 
 			max-width: 70%;
+		}
+
+		hr {
+			width: 45%;
+			height: 6px;
+			background-color: $accent-color;
+		}
+
+		iframe {
+			display: block;
+			margin: auto;
+		}
+
+		#youtubeVid {
+			display: block;
+			margin: auto;
+			aspect-ratio: 16/9;
+			width: 50%;
 		}
 	}
 
@@ -153,7 +172,6 @@ html {
 	h2,
 	h3,
 	p {
-		color: $text-color;
 		margin: 0;
 		padding: 0;
 	}
@@ -162,7 +180,6 @@ html {
 	a:link,
 	a:visited {
 		text-decoration: none;
-		color: $text-color;
 	}
 
 	body {
@@ -277,14 +294,41 @@ html {
 
 		h2 {
 			margin-top: 2em;
+			font-size: 5vw;
 		}
 
 		h3 {
 			margin-top: 1em;
+			font-size: 4.5vw;
+			margin-bottom: .5em;
+		}
+
+		p {
+			width: 90%;
+			font-size: 4vw;
 		}
 
 		img {
 			width: 75%;
+		}
+
+		hr {
+			width: 50%;
+			height: 5px;
+			background-color: $accent-color;
+		}
+
+		iframe {
+			display: block;
+			margin: auto;
+		}
+
+		#youtubeVid {
+			display: block;
+			margin: auto;
+			aspect-ratio: 16/9;
+			width: 70%;
+			margin-top: 1em;
 		}
 	}
 
