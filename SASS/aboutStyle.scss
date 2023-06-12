@@ -15,6 +15,8 @@ html {
 		margin: 0;
 		padding: 0;
 
+		background-image: url("..//images//WebsiteBackgroundImage_boarder.png");
+
 		min-height: 100%;
 
 		display: grid;
@@ -31,9 +33,6 @@ html {
 	}
 
 	nav {
-		background-color: $accent-color;
-
-
 		.NavCenter {
 			display: flex;
 			flex-flow: row nowrap;
@@ -121,7 +120,6 @@ html {
 
 	footer {
 		grid-area: 3 / 2 / 4 / 3;
-		background-color: $accent-color;
 
 		h1 {
 			text-align: center;
@@ -153,12 +151,10 @@ html {
 
 	.Sidebar1 {
 		grid-area: 1 / 1 / 4 / 2;
-		background-color: $accent-color;
 	}
 
 	.Sidebar2 {
 		grid-area: 1 / 3 / 4 / 4;
-		background-color: $accent-color;
 	}
 }
 
@@ -188,6 +184,8 @@ html {
 		margin: 0;
 		padding: 0;
 
+		background-image: url("..//images//WebsiteBackgroundImage_boarder.png");
+
 		min-height: 100%;
 
 		display: flex;
@@ -195,8 +193,6 @@ html {
 	}
 
 	nav {
-		background-color: $accent-color;
-
 		.NavCenter {
 			display: flex;
 			flex-flow: row nowrap;
@@ -267,7 +263,7 @@ html {
 
 				~.Pages {
 					display: block;
-					background-color: $accent-color;
+					background-image: url("..//images//WebsiteBackgroundImage_boarder.png");
 					position: absolute;
 					top: 4em;
 					right: 0;
@@ -326,7 +322,6 @@ html {
 	}
 
 	footer {
-		background-color: $accent-color;
 
 		h1 {
 			text-align: center;
