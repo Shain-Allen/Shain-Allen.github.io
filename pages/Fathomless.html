@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Shain Allen Portfolio</title>
+	<link rel="stylesheet" href="../CSS/projectPageStyle.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+	<nav>
+		<div class="NavCenter">
+			<div class="NamePlate">
+				<h1><a href="../index.html">Shain Allen <!--- Programmer &amp; Game Designer--> </a></h1>
+			</div>
+
+			<input class="menu-btn" type="checkbox" id="menu-btn">
+			<label class="menu-icon" for="menu-btn">
+				<span class="navicon"></span>
+			</label>
+
+			<div class="Pages">
+				<a href="../index.html">
+					<h2>Showcase</h2>
+				</a>
+				<a href="./programming.html">
+					<h2>Programming</h2>
+				</a>
+				<a href="./art.html">
+					<h2>Art</h2>
+				</a>
+				<a href="./about.html">
+					<h2>About</h2>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="MainBody">
+		<h2>Fathomless</h2>
+		<h3>Role: Programmer</h3>
+		<img src="../images/Fathomless/Fathomless_Banner_2.png" alt="Fathomless-Home-Page_Image">
+		<p>
+			Fathomless is an immersive and spine-chilling deep-sea horror game that pushes players to their limits as
+			they explore the dark and treacherous depths of the ocean.
+			Test your courage, grit, and will as you pilot a submarine through the depths of an unexplored ocean trench.
+			Will you discover what lies in the darkness?
+		</p>
+
+		<p>
+			Development happened over two 3 month sprints in which the first was done during a capstone class and the
+			second during a class specifically geared toward bring the game up to a level where it would be ready for
+			pax. I joined the development during this second sprint in an attempt to help bring the game to pax and it
+			required me to take some time to figure out how the game currently worked while also trying to help figure
+			out what needed to be changed to make the game a better experence for the player.
+		</p>
+		<p>
+			The first change I contributed to the game was to upgrade our unity version to 2022.3.4 to allow for us to
+			use the new Unity water system to inhance the "Underwater" feeling via the caustics it provides and its
+			custom under water shader that controls how far you can see and how lights behave in the water
+		</p>
+		<img src="../gifs/Fathomless_WaterCaustics.gif" alt="Fathomless caustics">
+		<br>
+		<img src="../images/Fathomless/Fathomless_waterVision.png" alt="Unity Underwater vision">
+		<br>
+
+		<p>
+			The second major change I made was to change the game over to the new unity input system to take
+			advantage of the input actions to make supporting Controllers and changing control schemes easier; paired
+			with that was a system to swap
+			the on screen control hints to match the current controler in use wether it be keyboard and mouse, Xbox, or
+			Playstation
+		</p>
+		<img src="../gifs/Fathomless_AdaptiveControls.gif" alt="Adaptive Controls on main menu">
+		<br>
+		<p>
+			there were also a number of other changes I made however some of them didn't end up making it into the game
+			due to time constraints caused by bugs made via technical debt such as my revision to the movement mechanics
+			that would have made the underwater movement feel more natural while still preserving the movement feel
+			inside the sub being broken due to a misunderstanding that both myself and another programmer had about the
+			components and their interactions with the Sub and the player in the game. We ended up creating a workaround
+			to fix it in the interim but eventually we ended up figuring out what was wrong however at that point, it
+			was too late to go back and put back in the new movement mechanics before our deadline of pax. while it
+			didn't ruin the game, it would have been better if it made it in, but it did provide a learning opportunity
+			that reinforced that when in development there will be things that you can't expect to happen perfectly and
+			there will need to be cuts to make a deadline
+		</p>
+
+		<iframe id="youtubeVid" src="https://www.youtube.com/embed/ObhT8jn9VQI"></iframe>
+		<br>
+		<iframe frameborder="0" src="https://itch.io/embed/2117314" width="552" height="167"><a
+				href="https://kingmav.itch.io/fathomless">FATHOMLESS (FULL RELEASE) by KingMav, FlamyB01, Seanathan,
+				ItaMunMoon, Dimensional</a></iframe>
+		<p></p>
+
+		<hr>
+		<h3>Software used</h3>
+		<div class="ulContainer">
+			<ul>
+				<li>Game Engine: 2022.3.4</li>
+				<li>Modeling Software: Maya, Blender</li>
+				<li>Texturing software: Substance painter, Photoshop</li>
+				<li>Version Control: Perforce Helix Core</li>
+				<li>Planning &amp; communication: Confluence</li>
+				<li>task managment: Jira</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<footer>
+		<h1>Info</h1>
+		<div class="FooterIcons">
+			<a href="https://github.com/Shain-Allen" target="_blank">
+				<img src="../images/SocialMediaLogos/GitHub-logo.png">
+			</a>
+			<a href="https://www.linkedin.com/in/shain-allen/" target="_blank">
+				<img src="../images/SocialMediaLogos/Linked-In.png">
+			</a>
+			<a href="https://twitter.com/shainismad" target="_blank">
+				<img src="../images/SocialMediaLogos/2021 Twitter logo - blue.png">
+			</a>
+			<a href="https://steamcommunity.com/profiles/76561198145162012/" target="_blank">
+				<img src="../images/SocialMediaLogos/Steam_icon_logo.png">
+			</a>
+		</div>
+		<address>
+			<a href="shain@shain-allen.com" target="_blank">Email: shain@shain-allen.com</a>
+		</address>
+	</footer>
+
+	<div class="Sidebar1"></div>
+	<div class="Sidebar2"></div>
+
+</body>
+
+</html>
