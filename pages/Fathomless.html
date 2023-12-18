@@ -43,9 +43,44 @@
 		<h2>Fathomless</h2>
 		<h3>Role: Programmer</h3>
 		<img src="../images/Fathomless/Fathomless_Banner_2.png" alt="Fathomless-Home-Page_Image">
-		<p></p>
+		<p>
+			Fathomless is an immersive and spine-chilling deep-sea horror game that pushes players to their limits as
+			they explore the dark and treacherous depths of the ocean.
+			Test your courage, grit, and will as you pilot a submarine through the depths of an unexplored ocean trench.
+			Will you discover what lies in the darkness?
+		</p>
 
+		<p>
+			Development happened over two 3 month sprints in which the first was done during a capstone class and the
+			second during a class specifically geared toward bring the game up to a level where it would be ready for
+			pax. I joined the development during this second sprint in an attempt to help bring the game to pax and it
+			required me to take some time to figure out how the game currently worked while also trying to help figure
+			out what needed to be changed to make the game a better experence for the player.
+		</p>
+		<p>
+			The first change I contributed to the game was to upgrade our unity version to 2022.3.4 to allow for us to
+			use the new Unity water system to inhance the "Underwater" feeling via the caustics it provides and its
+			custom under water shader that controls how far you can see and how lights behave in the water
+		</p>
+		<img src="../gifs/Fathomless_WaterCaustics.gif" alt="Fathomless caustics">
+		<br>
+		<img src="../images/Fathomless/Fathomless_waterVision.png" alt="Unity Underwater vision">
+		<br>
 
+		<p>
+			The second major change I made was to change the game over to the new unity input system to take
+			advantage of the input actions to make supporting Controllers and changing control schemes easier; paired
+			with that was a system to swap
+			the on screen control hints to match the current controler in use wether it be keyboard and mouse, Xbox, or
+			Playstation
+		</p>
+		<img src="../gifs/Fathomless_AdaptiveControls.gif" alt="Adaptive Controls on main menu">
+		<br>
+		<p>
+			there was also a number of other changes I made however some of them didn't end up making it into the game
+			due to time constraints caused by bugs made via technical debt such as my revision to the movement system
+			being
+		</p>
 
 		<iframe id="youtubeVid" src="https://www.youtube.com/embed/ObhT8jn9VQI"></iframe>
 		<br>
@@ -58,7 +93,7 @@
 		<h3>Software used</h3>
 		<div class="ulContainer">
 			<ul>
-				<li>Game Engine: </li>
+				<li>Game Engine: 2022.3.4</li>
 				<li>Modeling Software: Maya, Blender</li>
 				<li>Texturing software: Substance painter, Photoshop</li>
 				<li>Version Control: Perforce Helix Core</li>
